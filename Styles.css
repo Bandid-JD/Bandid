@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+    justify-content: center;
+    align-items: center;
+    heightt: 100vh;
+    font-family: 'Courier new', Courier, monospace;/* Fuente más legible */
+    background-image: url(background.jpg); /* Fondo atractivo */
+}
+
+/* Estilo para el formulario */
+#form {
+    background-image: url('img1.jpg'); /* Fondo del formulario*/
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 20px 20px #FFFFFF; /* Sombra */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto dentro del formulario */
+    width: 300px; /* Ancho fijo del formulario */
+    color: #FFFFFF; /*Color blanco para los label*/
+    animation: op 3s forwards;
+}
+
+@keyframes op{
+    0%{
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+form h1 {
+    color: #2F00FF;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #3E00FF,
+        0 0 40px #673AFF,
+        0 0 80px #7C36E0;
+    font-size: 3rem;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Ancho completo menos padding */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 20px; /* Bordes redondeados */
+    text-align: center;
+    background-color: #5E41C5; /*Color de fondo*/
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #3CAE24; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 70px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #2575fc; /* Color al pasar el mouse sobre el botón */
+}
+
+/* Mensajes de error o éxito */
+#mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Estilo para las secciones */
+section {
+    max-width: 1000px;
+    margin: 110px auto 60px auto;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    color: #eee;
+    font-size: 1.24rem;
+    display: none; /* Oculto por defecto */
+    background: URL('img2.jpg'); /* Fondo  */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+    width: 300px; /* Ancho fijo igual al formulario */
+    margin-top: 20px; /* Margen superior para separación del formulario */
+    animation: an 3s forwards;
+}
+
+
+@keyframes ann{
+    0%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+    100%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
+@keyframes an{
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+textarea{
+    padding: 20px 30px;
+    margin: 10px;
+}
+
+.whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #25d366bb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .whatsapp-float svg {
+      width: 32px;
+      height: 32px;
+      fill: white;
+    }
+    
